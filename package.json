@@ -1,10 +1,13 @@
 {
   "scripts": {
-  "start": "webpack serve --open",
-  "build": "webpack",
-  "watch": "webpack --watch"
-},
-
+    "test": "jest",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
@@ -32,4 +35,3 @@
     "webpack-dev-server": "^4.2.1"
   }
 }
-
