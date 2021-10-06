@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
-    new FaviconsWebpackPlugin('./src/favicon.png'),
+    new FaviconsWebpackPlugin('./src/favicon.svg'),
   ],
   output: {
     filename: 'main.js',
