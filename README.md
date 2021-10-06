@@ -1,6 +1,6 @@
 # Scory
 
-> A Javascript app connected to an API to retrieve and save scores. 
+> A Javascript web app that connects to an API to retrieve and save scores. 
 
 ![screenshot](./assets/img/app_screenshot.png)
 
