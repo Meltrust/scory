@@ -17,69 +17,52 @@
     <header class="my-5">
       <h1>Scory</h1>
     </header>
-    <main class="d-flex">
-      <section class="container" id="scores">
+    <main class="row">
+      <section class="col-lg" id="scores">
         <div class="d-flex justify-content-between align-items-center mb-4">
           <h2>Recent scores</h2>
-          <button class="btn btn-secondary" type="button">Refresh</button>
+          <button class="btn btn-secondary" type="button" id="refreshBtn">
+            Refresh
+          </button>
         </div>
         <table class="table table-striped">
-          <tbody>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name:</th>
-              <td>200</td>
-            </tr>
-            <tr>
-              <th scope="row">Name</th>
-              <td>300</td>
-            </tr>
-          </tbody>
+          <tbody id="table"></tbody>
         </table>
       </section>
 
       <section
-        class="container d-flex flex-column align-items-center"
+        class="col-lg d-flex flex-column align-items-center mt-5 mt-lg-0"
         id="add-score"
       >
         <div class="mb-4">
           <h2>Add your score</h2>
         </div>
-        <form class="d-flex flex-column align-items-center">
+        <form class="d-flex flex-column align-items-center" id="main-form">
           <input
             class="mb-2"
             type="text"
             name="name"
             id="name"
+            required
+            minlength="3"
+            maxlength="10"
             placeholder="Your name"
           />
           <input
             class="mb-2"
-            type="text"
+            type="number"
             name="score"
             id="score"
+            required
+            min="1"
+            max="100"
             placeholder="Your score"
           />
-          <button class="btn btn-secondary align-self-end" type="submit">
+          <button
+            class="btn btn-secondary align-self-end"
+            type="button"
+            id="submitBtn"
+          >
             Submit
           </button>
         </form>
