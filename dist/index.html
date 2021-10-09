@@ -37,23 +37,26 @@
         <div class="mb-4">
           <h2>Add your score</h2>
         </div>
-        <form class="d-flex flex-column align-items-center">
+        <form class="d-flex flex-column align-items-center" id="main-form">
           <input
             class="mb-2"
             type="text"
             name="name"
             id="name"
-            placeholder="Your name"
             required
+            minlength="3"
+            maxlength="10"
+            placeholder="Your name"
           />
           <input
             class="mb-2"
             type="number"
             name="score"
             id="score"
-            placeholder="Your score"
-            value=""
             required
+            min="1"
+            max="100"
+            placeholder="Your score"
           />
           <button
             class="btn btn-secondary align-self-end"
