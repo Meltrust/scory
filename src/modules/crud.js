@@ -56,10 +56,24 @@ const addScores = () => {
   const name = document.querySelector('#name');
   const score = document.querySelector('#score');
   const entry = { user: name.value, score: score.value };
+  const form = document.getElementById('main-form');
+  const inputError = document.createElement('small');
+  inputError.classList.add('mt-3');
 
-  sendScore(entry);
-  clearInputs(name, score);
-  fillTable();
+  if (score.value <= 0 || score.value > 100 || score.value == null) {
+    inputError.innerHTML = 'Please submit a score between 1 and 100';
+    form.appendChild(inputError);
+  } else if (name.value.length < 3 || name.value === '') {
+    inputError.innerHTML = 'Names must be from 3 to 10 characters long';
+    form.appendChild(inputError);
+  } else {
+    sendScore(entry);
+    clearInputs(name, score);
+    fillTable();
+  }
+  setTimeout(() => {
+    inputError.remove();
+  }, 3000);
 };
 
 export {
