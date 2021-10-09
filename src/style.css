@@ -1,0 +1,19 @@
+body {
+  text-decoration: none;
+  background-image: url('./background.png');
+  background-size: cover;
+  color: white;
+}
+
+tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+th,
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}

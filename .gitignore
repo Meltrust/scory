@@ -1,3 +1,12 @@
+game-id
+dist/
+dist/index.html
+dist/main.js
+.babelrc
+.eslint.json
+.hintrc
+.stylelintrc.json
+
 # Logs
 logs
 *.log
@@ -80,7 +89,6 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -102,3 +110,4 @@ dist
 
 # TernJS port file
 .tern-port
+
