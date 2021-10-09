@@ -1,3 +1,16 @@
 body {
   text-decoration: none;
 }
+
+tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+th,
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
